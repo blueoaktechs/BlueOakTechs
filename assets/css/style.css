@@ -1,0 +1,207 @@
+/*
+* Style
+*/
+
+/*
+* Google font
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Roboto");
+
+
+/*
+* Section - Home
+*/
+
+/** BG Parallax */
+#home-bg-parallax > .bg-parallax {
+    background: url("../images/bg-parallax2.jpg");
+}
+
+/* services start */
+
+#first{
+  background: url("../images/cameras.jpg");
+  background-repeat: no-repeat;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: #fff;
+}
+#second{
+  background: url("../images/graphics.png");
+  background-repeat: no-repeat;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: #fff;
+}
+#third{
+  background: url("../images/wifi.jpg");
+  background-repeat: no-repeat;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: #fff;
+}
+
+/* services end */
+
+#contact {
+    /*background-image: url("../images/bg-contact.jpg");*/
+}
+.contact-card {
+    opacity: 0.98;
+    min-height: 140px;
+}
+.contact-card img {
+    left: 0;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 15;
+}
+.contact-card-block {
+    left: 0;
+    padding: 0 30px 0 175px;
+    position: absolute;
+    top: 0;
+    z-index: 20;
+}
+/* contact start */
+.contact {
+    background-image: url(../images/bg-parallax2.jpg);
+    background-position: center;
+}
+.contact h2 {
+    color: white;
+    text-align: center;
+}
+.form-control {
+    background-color: transparent;
+    border-color: transparent;
+    margin-left: 0;
+    height: 300px;
+}
+#myrow1 {
+    width: 50%;
+    margin-left: 13%;
+}
+.row {
+    width: 101%;
+    background-color: transparent;
+}
+.col-sm-3 textarea {
+    margin-left: 280px;
+    background-color: transparent;
+    color: white;
+}
+.jumbotron{
+    background-color:transparent ;
+}
+
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+ 
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+/* contact end */
+
+/*
+* Footer
+*/
+
+.footer-logo {
+    max-height: 40px;
+}
+.footer-icon-social {
+    bottom: 10px;
+    position: relative;
+}
+
+/*
+ * Social
+ */
+
+#social .fa{
+    font-size: 3em;
+    width: 1.6em;
+    text-align: center;
+    line-height: 1.6em;
+    color: #fff;
+    border-radius: 0.8em; /* or 50% width & line-height */
+}
+
+.logo-small{
+    display:none;
+   }
+
+@media (max-width: 1199px) and (min-width: 991px){
+   .logo-small{
+    display:block;
+   }
+   .logo-large{
+    display:none;
+   }
+}
+
+@media (max-width: 450px){
+   .logo-small{
+    display:block;
+   }
+   .logo-large{
+    display:none;
+   }
+}
+
+
+@media (max-width: 500px) {
+    #social .fa{
+        font-size:1em;
+    }
+}
